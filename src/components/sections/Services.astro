@@ -1,0 +1,27 @@
+---
+import { services } from "../../data/landing";
+---
+
+<section id="servicios" class="section-pad section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Servicios</p>
+      <h2 class="section-title">Servicios de autor con estandar premium.</h2>
+    </div>
+    <div class="card-grid">
+      {
+        services.map((service) => (
+          <article class="service-card">
+            <h3>{service.name}</h3>
+            <p>{service.description}</p>
+            <div class="service-meta">
+              <span>{service.duration}</span>
+              <span>{service.price}</span>
+            </div>
+            <a href="#agenda" class="card-link">Reservar</a>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

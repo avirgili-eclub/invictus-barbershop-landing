@@ -1,0 +1,27 @@
+---
+import { professionals } from "../../data/landing";
+---
+
+<section id="profesionales" class="section-pad">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Profesionales</p>
+      <h2 class="section-title">Equipo experto en estilo masculino.</h2>
+    </div>
+    <div class="card-grid professionals-grid">
+      {
+        professionals.map((pro) => (
+          <article class="pro-card">
+            <img src={pro.image} alt={pro.name} loading="lazy" />
+            <div class="pro-content">
+              <h3>{pro.name}</h3>
+              <p class="pro-specialty">{pro.specialty}</p>
+              <p>{pro.bio}</p>
+              <a class="btn btn-ghost" href="#agenda">Agendar con este profesional</a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

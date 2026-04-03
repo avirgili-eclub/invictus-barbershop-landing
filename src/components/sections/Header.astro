@@ -1,0 +1,23 @@
+---
+import { navItems } from "../../data/landing";
+---
+
+<header class="site-header">
+  <div class="container nav-shell">
+    <a href="#inicio" class="brand-mark">Invictus</a>
+    <nav class="nav-links" aria-label="Principal">
+      {
+        navItems.map((item, index) => (
+          <a
+            href={item.href}
+            class={`nav-link ${index === 0 ? "nav-link-active" : ""}`}
+            aria-current={index === 0 ? "page" : undefined}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+    <a class="btn btn-primary nav-cta" href="#agenda">Agendar turno</a>
+  </div>
+</header>

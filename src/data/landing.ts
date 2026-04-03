@@ -1,0 +1,115 @@
+export type Service = {
+  name: string;
+  description: string;
+  duration: string;
+  price: string;
+};
+
+export type Professional = {
+  id: string;
+  name: string;
+  specialty: string;
+  bio: string;
+  image: string;
+};
+
+export type Review = {
+  author: string;
+  quote: string;
+};
+
+export const navItems = [
+  { href: "#inicio", label: "Inicio" },
+  { href: "#servicios", label: "Servicios" },
+  { href: "#profesionales", label: "Profesionales" },
+  { href: "#agenda", label: "Agenda" },
+  { href: "#academia", label: "Academia" },
+  { href: "#resenas", label: "Resenas" },
+  { href: "#ubicacion", label: "Ubicacion" },
+  { href: "#contacto", label: "Contacto" },
+] as const;
+
+export const services: Service[] = [
+  {
+    name: "Corte clasico",
+    description: "Perfil limpio con terminaciones precisas y acabado elegante.",
+    duration: "45 min",
+    price: "Gs. 110.000",
+  },
+  {
+    name: "Fade / degradado",
+    description: "Transiciones definidas, simetria y control en cada nivel.",
+    duration: "50 min",
+    price: "Gs. 130.000",
+  },
+  {
+    name: "Corte con tijera",
+    description: "Textura premium para estilos naturales de alto detalle.",
+    duration: "55 min",
+    price: "Gs. 140.000",
+  },
+  {
+    name: "Recorte de barba",
+    description: "Linea, volumen y proporciones adaptadas a tu rostro.",
+    duration: "30 min",
+    price: "Gs. 80.000",
+  },
+  {
+    name: "Lavado capilar",
+    description: "Limpieza profunda y preparacion completa antes del styling.",
+    duration: "20 min",
+    price: "Gs. 50.000",
+  },
+  {
+    name: "Tinte para hombres",
+    description: "Cobertura natural y calibrada para mantener tu estilo.",
+    duration: "70 min",
+    price: "Gs. 180.000",
+  },
+];
+
+export const professionals: Professional[] = [
+  {
+    id: "fabian",
+    name: "Fabian Reijhall",
+    specialty: "Precision cuts y direccion creativa",
+    bio: "Fundador de Invictus. Lidera la experiencia premium y supervision tecnica.",
+    image: "https://images.unsplash.com/photo-1605497787865-669f2f79414d?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "mateo",
+    name: "Mateo Silva",
+    specialty: "Fade, barba y acabado editorial",
+    bio: "Especialista en degradados de alto contraste y perfilado de barba.",
+    image: "https://images.unsplash.com/photo-1621607512022-6aecc4fed814?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    id: "enzo",
+    name: "Enzo Rossi",
+    specialty: "Scissor work y estilo contemporaneo",
+    bio: "Enfoque en texturas, volumen y armonia para imagen masculina actual.",
+    image: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
+export const reviews: Review[] = [
+  {
+    author: "Nicolas M.",
+    quote: "Excelente servicio, ambiente comodo y atencion personalizada de principio a fin.",
+  },
+  {
+    author: "Gabriel R.",
+    quote: "Se nota la calidad en cada detalle. Muy buen nivel de profesionales.",
+  },
+  {
+    author: "Matias B.",
+    quote: "Para mi, una de las mejores barberias de Asuncion. Experiencia premium real.",
+  },
+];
+
+export const academyHighlights = [
+  "Nivel basico a avanzado",
+  "Practica real con mentorias",
+  "Tecnicas clasicas y modernas",
+  "Desarrollo de estilo propio",
+];

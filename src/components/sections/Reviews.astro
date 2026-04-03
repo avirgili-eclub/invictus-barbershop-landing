@@ -1,0 +1,22 @@
+---
+import { reviews } from "../../data/landing";
+---
+
+<section id="resenas" class="section-pad section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <p class="eyebrow">Prueba social</p>
+      <h2 class="section-title">Experiencias que sostienen el prestigio.</h2>
+    </div>
+    <div class="card-grid">
+      {
+        reviews.map((review) => (
+          <article class="review-card">
+            <p>"{review.quote}"</p>
+            <strong>{review.author}</strong>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

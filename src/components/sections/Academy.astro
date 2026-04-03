@@ -1,0 +1,27 @@
+---
+import { academyHighlights } from "../../data/landing";
+---
+
+<section id="academia" class="section-pad">
+  <div class="container split-grid">
+    <article>
+      <p class="eyebrow">Academia Invictus</p>
+      <h2 class="section-title">Formacion para barberos que quieren ir mas alla.</h2>
+      <p>
+        Aprende desde lo esencial hasta tecnicas avanzadas con enfoque practico,
+        mentoria profesional y construccion de estilo propio.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contacto">Consultar proximo curso</a>
+        <a class="btn btn-ghost" href="#contacto">Quiero inscribirme</a>
+      </div>
+    </article>
+    <ul class="highlight-list">
+      {
+        academyHighlights.map((item) => (
+          <li>{item}</li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

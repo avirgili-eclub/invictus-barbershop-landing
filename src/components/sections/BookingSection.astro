@@ -1,0 +1,20 @@
+---
+import BookingWidget from "../booking/BookingWidget";
+import { professionals } from "../../data/landing";
+
+const bookingPros = professionals.map((pro) => ({ id: pro.id, name: pro.name }));
+---
+
+<section id="agenda" class="section-pad booking-section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Agenda</p>
+      <h2 class="section-title">Elegi tu profesional y reserva en minutos.</h2>
+      <p class="section-copy">
+        Consulta disponibilidad y confirma por WhatsApp con un flujo claro y
+        rapido.
+      </p>
+    </div>
+    <BookingWidget client:load professionals={bookingPros} />
+  </div>
+</section>
