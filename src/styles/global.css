@@ -436,6 +436,132 @@ blockquote {
   text-align: center;
 }
 
+.services-section {
+  background: #1c1b1b;
+}
+
+.services-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.services-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2.5rem;
+}
+
+.services-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.services-eyebrow {
+  margin: 0;
+  color: #ffb955;
+}
+
+.services-title {
+  margin: 0;
+  font-family: "Newsreader", serif;
+  font-size: clamp(2.4rem, 4.2vw, 4rem);
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.services-intro {
+  margin: 0;
+  width: min(100%, 320px);
+  color: #737373;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.services-grid-wrap {
+  background: rgba(82, 69, 53, 0.1);
+  padding: 1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.service-author-card {
+  min-height: 255px;
+  padding: 2.4rem 2.5rem;
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-author-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.service-icon {
+  width: 1.65rem;
+  height: 1.65rem;
+  color: #ffb955;
+  display: inline-flex;
+}
+
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.service-duration {
+  color: #737373;
+  font-family: "Roboto Mono", "Courier New", monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.service-author-card h3 {
+  margin: 0;
+  padding-top: 0.9rem;
+  font-family: "Newsreader", serif;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.service-author-card p {
+  margin: 0.75rem 0 0;
+  color: #a3a3a3;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  max-width: 31ch;
+}
+
+.service-link {
+  margin-top: auto;
+  padding-top: 1.45rem;
+  color: #ffb955;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.11em;
+  font-weight: 700;
+}
+
+.service-link:hover {
+  color: #ffd08c;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -744,6 +870,29 @@ blockquote {
 
   .about-outline {
     display: none;
+  }
+
+  .services-shell {
+    gap: 2.9rem;
+  }
+
+  .services-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-author-card {
+    min-height: 0;
+    padding: 2rem 1.5rem;
+  }
+
+  .service-author-card h3 {
+    font-size: 1.86rem;
   }
 
   .lead-copy {

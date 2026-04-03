@@ -32,39 +32,39 @@ export const navItems = [
 export const services: Service[] = [
   {
     name: "Corte clasico",
-    description: "Perfil limpio con terminaciones precisas y acabado elegante.",
+    description: "Tecnicas tradicionales con acabados modernos y precisos.",
     duration: "45 min",
     price: "Gs. 110.000",
   },
   {
     name: "Fade / degradado",
-    description: "Transiciones definidas, simetria y control en cada nivel.",
-    duration: "50 min",
+    description: "Transiciones perfectas de sombras, desde el cero absoluto.",
+    duration: "60 min",
     price: "Gs. 130.000",
   },
   {
-    name: "Corte con tijera",
-    description: "Textura premium para estilos naturales de alto detalle.",
-    duration: "55 min",
-    price: "Gs. 140.000",
-  },
-  {
     name: "Recorte de barba",
-    description: "Linea, volumen y proporciones adaptadas a tu rostro.",
+    description: "Perfilado con navaja y ritual de toalla caliente.",
     duration: "30 min",
     price: "Gs. 80.000",
   },
   {
     name: "Lavado capilar",
-    description: "Limpieza profunda y preparacion completa antes del styling.",
+    description: "Masaje relajante y productos de alta gama.",
     duration: "20 min",
     price: "Gs. 50.000",
   },
   {
-    name: "Tinte para hombres",
-    description: "Cobertura natural y calibrada para mantener tu estilo.",
-    duration: "70 min",
+    name: "Tinte / color",
+    description: "Camuflaje de canas o cambios radicales de tono.",
+    duration: "90 min",
     price: "Gs. 180.000",
+  },
+  {
+    name: "Corte con tijera",
+    description: "Trabajo artesanal para melenas con movimiento natural.",
+    duration: "50 min",
+    price: "Gs. 140.000",
   },
 ];
 
