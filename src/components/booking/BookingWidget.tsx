@@ -11,8 +11,8 @@ type BookingWidgetProps = {
 
 const slotsByProfessional: Record<string, string[]> = {
   fabian: ["09:30", "11:00", "13:30", "16:00"],
-  mateo: ["10:00", "12:00", "15:30", "18:00"],
-  enzo: ["09:00", "11:30", "14:30", "17:30"],
+  oliver: ["10:00", "12:00", "15:30", "18:00"],
+  cess: ["09:00", "11:30", "14:30", "17:30"],
 };
 
 const fallbackSlots = ["10:00", "12:30", "16:30"];
