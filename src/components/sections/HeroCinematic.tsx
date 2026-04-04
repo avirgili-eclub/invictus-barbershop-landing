@@ -14,7 +14,7 @@ export default function HeroCinematic() {
     offset: ["start start", "end start"],
   });
 
-  const backY = useTransform(scrollYProgress, [0, 1], [0, -120]);
+  const backY = useTransform(scrollYProgress, [0, 1], [0, -24]);
   const midY = useTransform(scrollYProgress, [0, 1], [0, -220]);
   const frontY = useTransform(scrollYProgress, [0, 1], [0, -300]);
   const contentY = useTransform(scrollYProgress, [0, 1], [0, -70]);
@@ -39,7 +39,9 @@ export default function HeroCinematic() {
 
   return (
     <section id="inicio" ref={heroRef} className="hero-cinematic section-pad">
-      <motion.div className="hero-layer hero-layer-back" style={{ y: backY }} aria-hidden="true" />
+      <motion.div className="hero-layer hero-layer-back" style={{ y: backY }} aria-hidden="true">
+        <img className="hero-bg-image" src="/images/hero-barber-bg.png" alt="" decoding="async" fetchPriority="high" />
+      </motion.div>
       <motion.div className="hero-layer hero-layer-mid" style={{ y: midY }} aria-hidden="true" />
       <motion.div className="hero-layer hero-layer-front" style={{ y: frontY }} aria-hidden="true" />
 

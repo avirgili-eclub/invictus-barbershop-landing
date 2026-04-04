@@ -4,7 +4,16 @@ import { navItems } from "../../data/landing";
 
 <header class="site-header">
   <div class="container nav-shell">
-    <a href="#inicio" class="brand-mark">Invictus</a>
+    <a href="#inicio" class="brand-mark" aria-label="Invictus Barbershop">
+      <img
+        src="/images/invictus-logo-transparent-fixed.png"
+        alt="Invictus"
+        width="542"
+        height="192"
+        loading="eager"
+        decoding="async"
+      />
+    </a>
     <nav class="nav-links" aria-label="Principal">
       {
         navItems.map((item, index) => (
