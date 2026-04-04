@@ -120,6 +120,22 @@ a {
   justify-self: center;
 }
 
+.mobile-shortcuts {
+  display: none;
+}
+
+.mobile-shortcut-link {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #b8b8b8;
+  font-weight: 700;
+}
+
+.mobile-shortcut-link:hover {
+  color: #e8ac49;
+}
+
 .nav-link {
   position: relative;
   font-size: 0.7rem;
@@ -856,6 +872,28 @@ blockquote {
     display: none;
   }
 
+  .nav-shell {
+    grid-template-columns: auto 1fr;
+    gap: 0.8rem;
+    min-height: 3.45rem;
+  }
+
+  .mobile-shortcuts {
+    display: flex;
+    gap: 0.9rem;
+    justify-self: end;
+    align-items: center;
+    grid-column: 2;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .mobile-shortcut-link {
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+  }
+
   .hero-grid,
   .about-grid,
   .split-grid,
@@ -871,14 +909,12 @@ blockquote {
   }
 
   .brand-mark {
-    width: 178px;
-    height: 35px;
+    width: 156px;
+    height: 31px;
   }
 
   .nav-cta {
-    min-width: 146px;
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
+    display: none;
   }
 
   .hero-cinematic {
